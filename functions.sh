@@ -14,6 +14,7 @@ then
     exit 1
 else
     echo "you are root user"
+fi
 
 dnf install git -y
 VALIDATE $? "installing git"
