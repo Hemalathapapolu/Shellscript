@@ -1,3 +1,3 @@
 #!/bin/bash
-i=["variables" "conditions" "functions"]
-echo "coding concept are : [$i[@]]
+i=["variables""functions""conditions"]
+echo "coding concept are : ${i[@]}
