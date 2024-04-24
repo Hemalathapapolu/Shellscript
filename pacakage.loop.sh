@@ -29,8 +29,8 @@ do
     then 
         echo " $i is already installed .... SKIPING "
     else
-        echo " Installing $i "
+        dnf install $i -y &>>$LOGFILE
+        VALIDATE $? "Installing $i"
+    
     fi
 done
-dnf install mysql -y &>>$LOGFILE
-VALIDATE $? "Installing Mysql"
