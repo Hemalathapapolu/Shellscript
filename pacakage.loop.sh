@@ -21,7 +21,7 @@ else
     echo "you are root user"
 fi
 
-for i in $@
+for i in $@ #we need to give pacakages in arguments while executing the script
 do
     echo " pacakage to install $i "
     dnf list installed $i &>>LOGFILE
