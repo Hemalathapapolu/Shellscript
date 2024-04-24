@@ -13,7 +13,7 @@ VALIDATE(){
     fi
 }
 
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo "Try with root access"
 else
