@@ -56,16 +56,16 @@ VALIDATE $? "Extracted backend code"
 npm install &>>$LOGFILE
 VALIDATE $? "Installing nodejs dependencies"
 
-cp /home/ec2-user/Shellscript/backendconfig.sh /etc/systemd/system/backendconfig.sh &>>$LOGFILE
+cp /home/ec2-user/Shellscript/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "Copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE
 VALIDATE $? "Daemon Reload"
 
-systemctl start backendconfig.sh &>>$LOGFILE
+systemctl start backend &>>$LOGFILE
 VALIDATE $? "Starting backend"
 
-systemctl enable backendconfig.sh &>>$LOGFILE
+systemctl enable backend &>>$LOGFILE
 VALIDATE $? "Enabling backend"
 
 dnf install mysql -y &>>$LOGFILE
