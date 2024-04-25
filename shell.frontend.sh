@@ -6,8 +6,6 @@ LOGFILE=/tmp/$SCRIPT_NAME.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
-echo " db password is:"
-read -s mysql_root_password
 VALIDATE(){
     if [ $? -ne 0 ]
     then
