@@ -9,15 +9,15 @@ N="\e[0m"
 echo " db password is:"
 read -s mysql_root_password
 VALIDATE(){
-    if [ $? -ne 0]
+    if [ $? -ne 0 ]
     then
-        echo -e"$2 is  ....$R Failure $N"
+        echo -e "$2 is  ....$R Failure $N"
         exit 1
     else
-        echo "$2 is .. $G SUCCESS $N"
+        echo -e "$2 is .. $G SUCCESS $N"
     fi
 }
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
     then
         echo " Run with Root access"
         exit 1
@@ -42,7 +42,3 @@ then
 else
     echo -e "MySQL Root password is already setup...$Y SKIPPING $N"
 fi
-
-
-
-
