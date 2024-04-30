@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
-
+error(){
+    echo " Error at $1: $2 "
+    trap ' "failure at:$Lineno" "failure at:$bash_command" ' ERR
+    }
 USERID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S) 
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
