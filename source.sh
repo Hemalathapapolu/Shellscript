@@ -4,6 +4,6 @@ COURSE="DevOps"
 
 echo " Before source learing $COURSE "
 
-./source1.sh
+source ./source1.sh
 
 echo " Source1 course $COURSE "
