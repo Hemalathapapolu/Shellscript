@@ -1,5 +1,5 @@
 #!/bin/bash
 
-COURSE=" Terraform "
+COURSE="git"
 
 echo " Print after source $COURSE "
