@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COURSE=($DevOps)
+COURSE=$(DevOps)
 
 echo " Before source learing $COURSE "
 
