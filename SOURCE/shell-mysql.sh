@@ -1,4 +1,6 @@
 #!/bin/bash
+source ./expense_source.sh
+
 echo " db password is:"
 read -s mysql_root_password
 
