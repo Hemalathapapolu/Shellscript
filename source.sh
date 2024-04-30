@@ -1,9 +1,9 @@
 #!/bin/bash
 
-COURSE=$(DevOps)
+COURSE="DevOps"
 
 echo " Before source learing $COURSE "
 
-source ./source1.sh
+./source1.sh
 
 echo " Source1 course $COURSE "
