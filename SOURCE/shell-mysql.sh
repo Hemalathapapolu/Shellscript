@@ -4,7 +4,7 @@ source ./expense_source.sh
 echo " db password is:"
 read -s mysql_root_password
 
-dnf install mysql-server -y &>>LOGFILE
+dnf install mysql-server -y &>>$LOGFILE
 VALIDATE $? "Installing Mysql-server"
 
 systemctl enable mysqld &>>$LOGFILE
